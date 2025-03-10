@@ -26,7 +26,7 @@ public class ProductoImpl {
         Query.append("SELECT * FROM public.producto");
 
         if(!Filtro.getFilter().isEmpty()){
-            Query.append(" where (descripcion ilike '%");
+            Query.append(" Where (descripcion ilike '%");
             Query.append(Filtro.getFilter());
             Query.append("%'");
             Query.append(" or codigo ilike '%");
